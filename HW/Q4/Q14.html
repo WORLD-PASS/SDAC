@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      z-index: 1000;
+    }
+
+    main {
+      margin-top: 60px;
+      padding: 20px;
+    }
+
+    .section-1 {
+      position: relative;
+      background-color: lightgoldenrodyellow;
+      border: 2px solid darkblue;
+      padding: 20px;
+      margin-bottom: 20px;
+      height: 300px;
+    }
+
+    .section-1 .inner-box {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background-color: crimson;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    .section-2 {
+      position: sticky;
+      top: 60px;
+      background-color: steelblue;
+      color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      height: 200px;
+    }
+
+    footer {
+      position: static;
+      background-color: darkslategray;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .filler {
+      height: 600px;
+      background-color: lavender;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: dimgray;
+    }
+  </style>
+</head>
+<body>
+ <header>
+        <nav class="navbar">
+
+            <img src="https://i.pinimg.com/736x/11/fd/79/11fd793e72ec63001f338387b2d4c55b.jpg
+" alt="logo" class="logo" style="  height: 40px;
+            width: 40px;"> &nbsp;&nbsp;
+            <CENter> &nbsp; &nbsp;  &nbsp;
+            <a href="" class="link">Home</a>&nbsp; &nbsp; | &nbsp;
+            <a href="" class="link">Product</a> &nbsp; &nbsp; | &nbsp; 
+            <a href="" class="link">Contact Us</a>&nbsp; &nbsp; | &nbsp; 
+            <a href="" class="link">About Us</a>&nbsp; &nbsp;  &nbsp; 
+            </CENter>
+
+
+        </nav>
+        <hr>
+
+    </header>
+  <main>
+    <section class="section-1">
+      <h2>Section 1 (Relative)</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos voluptatum cumque eos commodi error repellat eligendi molestias, libero ipsa est!box.</p>
+      <div class="inner-box">Absolute Box</div>
+    </section>
+
+    <section class="section-2">
+      <h2>Section 2 (Sticky)</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nostrum.er.</p>
+    </section>
+
+    <div class="filler">Scrollable filler…</div>
+  </main>
+
+  <footer>Static Footer</footer>
+
+</body>
+</html>   

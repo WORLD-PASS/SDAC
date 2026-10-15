@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gradient Boxes</title>
+  <style>
+    .box {
+      width: 400px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    .box-linear {
+      background: linear-gradient(to right, darkblue, gold, darkred);
+    }
+
+    .box-radial {
+      background: radial-gradient(circle, white, lightblue, darkblue);
+    }
+
+    .box span {
+      color: white;
+      font-family: 'Arial', sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box box-linear">
+    <span>Lorem ipsum dolor sit amet.</span>
+  </div>
+
+  <div class="box box-radial">
+    <span>Lorem ipsum dolor sit amet.</span>
+  </div>
+
+</body>
+</html>   

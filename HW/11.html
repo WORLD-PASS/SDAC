@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Full-Width Background Video</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      color: red;
+      font-family: 'Georgia', serif;
+      font-size: 3rem;
+      text-align: center;
+      padding-top: 40vh;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay loop muted>
+    <source src="/video1" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h1>Full-Width Background Video</h1>
+
+</body>
+</html>   
